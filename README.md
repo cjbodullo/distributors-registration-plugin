@@ -56,3 +56,5 @@ Two tags render the same form:
 ## Database
 
 Logical tables (prefix `dis_`): country, province, city, address, distributors, distributors_status, distributors_distribution_plan, distributors_doctors. Table resolution supports legacy non-prefixed names when present.
+
+Reference SQL (manual installs / documentation): `schema/distributor_registration.sql` in this plugin folder. Prefer letting the plugin run `dbDelta()` on activation / `init`.
