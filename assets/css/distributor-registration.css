@@ -1,0 +1,792 @@
+.dreg-dr-shell {
+  min-height: 100vh;
+  padding: 22px 0 30px;
+}
+
+.dreg-dr-shell *,
+.dreg-dr-shell *::before,
+.dreg-dr-shell *::after {
+  box-sizing: border-box;
+}
+
+/* Main column (HC-style: no Bootstrap .container) */
+.dreg-dr-container {
+  width: 100%;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Utility classes used in markup (no Bootstrap dependency) */
+.dreg-dr-shell .text-center {
+  text-align: center;
+}
+
+.dreg-dr-shell .font-weight-bold {
+  font-weight: 600;
+}
+
+.dreg-dr-shell .d-block {
+  display: block;
+}
+
+.dreg-dr-shell .d-flex {
+  display: flex;
+}
+
+.dreg-dr-shell .justify-content-end {
+  justify-content: flex-end;
+}
+
+.dreg-dr-shell .align-items-end {
+  align-items: flex-end;
+}
+
+.dreg-dr-shell .w-100 {
+  width: 100%;
+}
+
+.dreg-dr-shell .mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.dreg-dr-shell .mb-3 {
+  margin-bottom: 1rem;
+}
+
+.dreg-dr-shell .mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.dreg-dr-shell .mt-2 {
+  margin-top: 0.5rem;
+}
+
+.dreg-dr-shell .mt-3 {
+  margin-top: 1rem;
+}
+
+.dreg-dr-shell .mr-3 {
+  margin-right: 1rem;
+}
+
+.dreg-dr-shell .p-2 {
+  padding: 0.5rem;
+}
+
+.dreg-dr-shell .p-3 {
+  padding: 1rem;
+}
+
+.dreg-dr-shell .p-4 {
+  padding: 1.5rem;
+}
+
+.dreg-dr-shell .px-3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dreg-dr-shell .pb-3 {
+  padding-bottom: 1rem;
+}
+
+.dreg-dr-shell .h6 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.dreg-dr-shell hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+.dreg-dr-shell .border {
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.dreg-dr-shell .rounded {
+  border-radius: 0.35rem;
+}
+
+.dreg-dr-shell .alert.alert-danger {
+  padding: 0.75rem 1rem;
+  border: 1px solid #f5c6cb;
+  border-radius: 0.35rem;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.dreg-dr-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.dreg-dr-form label {
+  margin-bottom: 0.35rem;
+}
+
+.dreg-dr-form .form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.dreg-dr-form .form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.dreg-dr-form .form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.dreg-dr-form .form-control.is-valid {
+  border-color: #28a745;
+}
+
+.dreg-dr-form select.form-control {
+  height: calc(1.5em + 0.75rem + 2px);
+}
+
+.dreg-dr-form .invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #dc3545;
+}
+
+.dreg-dr-form .form-check {
+  position: relative;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.dreg-dr-form .form-check-inline {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 0.35rem;
+  padding-left: 0;
+}
+
+.dreg-dr-form .form-check-inline .form-check-input {
+  position: static;
+  margin: 0 0.35rem 0 0;
+  flex-shrink: 0;
+}
+
+.dreg-dr-form .form-check-inline .form-check-label {
+  margin: 0;
+  color: #4a6562;
+  font-weight: 500;
+}
+
+.dreg-dr-form .form-check-input {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.15rem;
+  vertical-align: top;
+}
+
+.dreg-dr-form .btn,
+.dreg-dr-thankyou-card .btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dreg-dr-form .btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0.25rem;
+  min-width: auto;
+  padding: 0.25rem 0.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.dreg-dr-form .btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  color: #fff;
+}
+
+/* Responsive grid: .row + .col-md-* inside the form (markup uses .row like Bootstrap) */
+.dreg-dr-form .row,
+.dreg-dr-form .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.dreg-dr-form .row > [class*='col-'],
+.dreg-dr-form .form-row > [class*='col-'] {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .dreg-dr-form .row > .col-md-6,
+  .dreg-dr-form .form-row > .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .dreg-dr-form .row > .col-md-4,
+  .dreg-dr-form .form-row > .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .dreg-dr-form .row > .col-md-3,
+  .dreg-dr-form .form-row > .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .dreg-dr-form .row > .col-md-1,
+  .dreg-dr-form .form-row > .col-md-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+}
+
+.dreg-dr-form-container {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(43, 58, 74, 0.14);
+  overflow: hidden;
+}
+
+.dreg-dr-header-image {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
+
+.dreg-dr-topbar {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+  padding: 18px 18px 6px;
+}
+
+.dreg-dr-title {
+  color: #66cccc;
+  font-size: clamp(20px, 3.6vw, 40px);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dreg-dr-step-indicator {
+  padding: 12px 18px 18px;
+}
+
+.dreg-dr-step-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  color: #7b8b96;
+}
+
+.dreg-dr-step-item {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  gap: 4px;
+  padding: 0 6px;
+}
+
+.dreg-dr-step-label {
+  font-size: 12px;
+  line-height: 1.2;
+  color: #7b8b96;
+}
+
+.dreg-dr-step-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  background: #e7eef0;
+  color: #6f7e87;
+  margin: 0 auto 6px;
+  z-index: 2;
+}
+
+.dreg-dr-step-circle.is-active {
+  background: #66cccc;
+  color: #fff;
+}
+
+.dreg-dr-step-circle.is-completed {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.dreg-dr-step-label.is-active {
+  color: #66cccc;
+  font-weight: 600;
+}
+
+.dreg-dr-step-label.is-completed {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.dreg-dr-step-connector {
+  display: none;
+}
+
+.dreg-dr-step-item:last-child .dreg-dr-step-connector {
+  display: none;
+}
+
+/* Multi-step form: stacked panels with slide/fade when changing steps */
+.dreg-dr-steps-anim-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.dreg-dr-steps-anim-wrap > .dreg-dr-step {
+  grid-area: 1 / 1;
+  min-width: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+    transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dreg-dr-steps-anim-wrap > .dreg-dr-step.dreg-dr-step-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.dreg-dr-steps-anim-wrap > .dreg-dr-step.dreg-dr-step-active.dreg-dr-step-leaving {
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dreg-dr-steps-anim-wrap[data-dreg-dir='next'] > .dreg-dr-step.dreg-dr-step-active.dreg-dr-step-leaving {
+  transform: translate3d(-22px, 0, 0);
+  opacity: 0;
+}
+
+.dreg-dr-steps-anim-wrap[data-dreg-dir='prev'] > .dreg-dr-step.dreg-dr-step-active.dreg-dr-step-leaving {
+  transform: translate3d(22px, 0, 0);
+  opacity: 0;
+}
+
+.dreg-dr-steps-anim-wrap > .dreg-dr-step.dreg-dr-step-active.dreg-dr-step-enter {
+  transition: none;
+  z-index: 2;
+}
+
+.dreg-dr-steps-anim-wrap[data-dreg-dir='next'] > .dreg-dr-step.dreg-dr-step-active.dreg-dr-step-enter {
+  transform: translate3d(28px, 0, 0);
+  opacity: 0;
+}
+
+.dreg-dr-steps-anim-wrap[data-dreg-dir='prev'] > .dreg-dr-step.dreg-dr-step-active.dreg-dr-step-enter {
+  transform: translate3d(-28px, 0, 0);
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dreg-dr-steps-anim-wrap > .dreg-dr-step,
+  .dreg-dr-steps-anim-wrap > .dreg-dr-step.dreg-dr-step-active {
+    transition-duration: 0.01ms;
+  }
+}
+
+.dreg-dr-footer {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.dreg-dr-powered-by {
+  color: #096768;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.dreg-dr-footer img {
+  width: 140px;
+  max-width: 80%;
+  height: auto;
+}
+
+/* Bold group headings: charcoal-grey instead of default black */
+.dreg-dr-form label.font-weight-bold {
+  color: #5c6570;
+}
+
+@media (max-width: 768px) {
+  .dreg-dr-topbar {
+    text-align: center;
+  }
+
+  .dreg-dr-title {
+    text-align: center;
+  }
+}
+
+.dreg-dr-form input[type='radio'].form-check-input {
+  accent-color: #b8c2c9;
+}
+
+.dreg-dr-form input[type='radio'].form-check-input:checked,
+.dreg-dr-form input[type='radio'].form-check-input.is-valid {
+  accent-color: #28a745;
+}
+
+.dreg-dr-form input[type='radio'].form-check-input.is-invalid {
+  accent-color: #dc3545;
+}
+
+.dreg-dr-form input[type='radio'].form-check-input:checked + .form-check-label,
+.dreg-dr-form input[type='radio'].form-check-input.is-valid + .form-check-label {
+  color: #28a745;
+}
+
+.dreg-dr-form input[type='radio'].form-check-input.is-invalid + .form-check-label {
+  color: #dc3545;
+}
+
+.dreg-dr-form input[type='checkbox'].form-check-input {
+  accent-color: #66cccc;
+}
+
+.dreg-dr-form input[type='checkbox'].form-check-input.is-invalid {
+  accent-color: #dc3545;
+  box-shadow: 0 0 0 1px #dc3545;
+  outline: none;
+  border-radius: 4px;
+}
+
+.dreg-dr-form input[type='checkbox'].form-check-input.is-invalid + .form-check-label {
+  color: #dc3545;
+}
+
+.dreg-dr-form input[type='checkbox'].form-check-input:checked + .form-check-label,
+.dreg-dr-form input[type='checkbox'].form-check-input.is-valid + .form-check-label {
+  color: #28a745;
+}
+
+.dreg-dr-form input[type='checkbox'].form-check-input:checked,
+.dreg-dr-form input[type='checkbox'].form-check-input.is-valid {
+  accent-color: #28a745;
+  box-shadow: none;
+}
+
+/* Valid select: green border + check icon (self-contained, no Bootstrap) */
+.dreg-dr-form select.form-control.is-valid {
+  border-color: #28a745;
+  padding-right: calc(1.5em + 0.75rem);
+  background: #fff
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%2328a745' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E")
+    no-repeat right calc(0.375em + 0.1875rem) center / calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.dreg-dr-form .form-check-input.is-valid {
+  border-color: #28a745;
+}
+
+.dreg-dr-form .form-check-input.is-valid:checked {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Pill teal buttons (Previous outline + primary solid) */
+.dreg-dr-form .d-flex.justify-content-end {
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.dreg-dr-form .btn.btn-primary,
+.dreg-dr-thankyou-card .btn.btn-primary {
+  background-color: #66cccc;
+  border: 2px solid #66cccc;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.55rem 1.85rem;
+  min-width: 7.5rem;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Solid primary: no extra ring by default; clear outer outline on hover */
+.dreg-dr-form .btn.btn-primary:hover,
+.dreg-dr-thankyou-card .btn.btn-primary:hover {
+  background-color: #52b8b8;
+  border-color: #52b8b8;
+  color: #fff;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 5px #2d9090;
+}
+
+.dreg-dr-form .btn.btn-primary:focus,
+.dreg-dr-thankyou-card .btn.btn-primary:focus {
+  background-color: #52b8b8;
+  border-color: #52b8b8;
+  color: #fff;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 5px #2d9090;
+}
+
+.dreg-dr-form .btn.btn-outline-primary {
+  color: #66cccc;
+  border: 2px solid #66cccc;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.55rem 1.85rem;
+  min-width: 7.5rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.dreg-dr-form .btn.btn-outline-primary:hover {
+  color: #2d9090;
+  background-color: rgba(102, 204, 204, 0.14);
+  border-color: #2d9090;
+  border-width: 2px;
+  /* Outer ring so the outline change reads clearly on hover */
+  box-shadow: 0 0 0 3px rgba(45, 144, 144, 0.28);
+}
+
+.dreg-dr-form .btn.btn-outline-primary:focus {
+  color: #3a9e9e;
+  background-color: rgba(102, 204, 204, 0.12);
+  border-color: #3a9e9e;
+  box-shadow: 0 0 0 0.2rem rgba(102, 204, 204, 0.3);
+}
+
+/* Thank-you page — same visual language as winner release (.wpr-thank-you) */
+.dreg-dr-thankyou-page {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.dreg-dr-thankyou-card {
+  text-align: center;
+  margin: 0 auto;
+  padding: 48px 32px 40px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(17, 107, 107, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(25, 68, 98, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.dreg-dr-thankyou-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(103, 212, 205, 0.28) 0%, rgba(103, 212, 205, 0) 70%);
+  pointer-events: none;
+}
+
+.dreg-dr-thankyou-card::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 auto;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(10, 146, 175, 0.18) 0%, rgba(10, 146, 175, 0) 72%);
+  pointer-events: none;
+}
+
+.dreg-dr-thankyou-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(103, 212, 205, 0.16);
+  color: #0f7d85;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.dreg-dr-thankyou-badge::before {
+  content: '\2713';
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #67d4cd 0%, #0a92af 100%);
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* Thank-you headline */
+.dreg-dr-thankyou-card-title {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 14px;
+  font-size: clamp(2.25rem, 8vw, 4rem);
+  line-height: 1.1;
+  font-weight: 700;
+  font-style: italic;
+  color: #ff646c;
+}
+
+/* Thank-you subheading */
+.dreg-dr-thankyou-card-lead {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  margin: 0 auto 12px;
+  font-size: clamp(1rem, 2.4vw, 1.35rem);
+  line-height: 1.4;
+  color: #66cccc;
+  font-weight: 700;
+}
+
+.dreg-dr-thankyou-card-text {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  margin: 0 auto 10px;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #4f6674;
+}
+
+.dreg-dr-thankyou-card-text a {
+  color: #0a92af;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.dreg-dr-thankyou-card-text a:hover {
+  text-decoration: underline;
+}
+
+.dreg-dr-thankyou-card .dreg-dr-thankyou-cta {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-top: 24px;
+  text-decoration: none !important;
+}
+
+.dreg-dr-thankyou-card .dreg-dr-thankyou-cta:hover,
+.dreg-dr-thankyou-card .dreg-dr-thankyou-cta:focus,
+.dreg-dr-thankyou-card .dreg-dr-thankyou-cta:visited {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.dreg-dr-thankyou-card-footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(17, 107, 107, 0.1);
+  text-align: center;
+}
+
+.dreg-dr-thankyou-card-footer .dreg-dr-powered-by {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.dreg-dr-thankyou-card-footer img {
+  width: 120px;
+  max-width: 70%;
+  height: auto;
+}
+
+/* Thank-you banner: directly under lead line, compact width */
+.dreg-dr-thankyou-card .dreg-dr-thankyou-banner-wrap {
+  max-width: min(100%, 380px);
+  width: 100%;
+  margin: 0.35rem auto 1.15rem;
+}
+
+.dreg-dr-thankyou-card .dreg-dr-thankyou-banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .dreg-dr-thankyou-card {
+    padding: 36px 20px 32px;
+    border-radius: 22px;
+  }
+
+  .dreg-dr-thankyou-card-text {
+    font-size: 15px;
+  }
+
+}
+
